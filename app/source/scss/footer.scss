@@ -1,0 +1,54 @@
+@import '_base/colors';
+
+.footer {
+  font-family: 'Permanent Marker', cursive;
+  //background:black;
+  height:200px;
+  color:white;
+  h5 {
+    font-size:1.2em;
+  }
+  ul {
+    list-style:none;
+    position: relative;
+    top:-20px;
+    li {
+      display:inline-block;
+      margin:50px;
+      i:hover{
+        color:$popping-red;
+      }
+    }
+    li>a {
+      color: #337ab7;
+    }
+  }
+}
+
+//small screen rules
+@media (max-width:450px) {
+  .footer {
+    ul {
+      li {
+        margin:10px;
+        position: relative;
+        right:20px;
+      }
+    }
+  }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  .footer {
+    ul {
+      li {
+        margin:10px;
+        position: relative;
+        right:20px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,45 @@
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px|Raleway:400,100,200,300,500,600|Poiret+One|Permanent+Marker");
+
+@import '_base/_normalize';
+
+@import '_base/_colors';
+
+@import '_base/_nav';
+
+@import '_base/_mobile-nav';
+
+@import '_base/_home';
+
+@import '_base/_about';
+
+@import '_base/_films';
+
+@import '_base/_contact';
+
+@import '_base/_footer';
+
+body {
+  margin-top:50px;
+  color:black;
+  text-align:center;
+  font-family: 'Poiret One', cursive;
+}
+
+img {
+  max-width:100%;
+}
+.grid {
+  width:100%;
+  overflow:auto;
+
+}
+.col-1-3 {
+  width:33.33%;
+  float:left;
+}
+
+.hell {
+  color:red;
+}

@@ -1,0 +1,78 @@
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px|Raleway:400,100,200,300,500,600|Poiret+One|Permanent+Marker");
+
+@import '_base/_normalize';
+
+@import '_base/colors';
+
+@import 'nav';
+
+@import '_base/_mobile-nav';
+
+@import 'home';
+
+@import '_base/_about';
+
+@import '_base/_films';
+
+@import '_base/_contact';
+
+@import 'footer';
+
+body {
+  margin-top:50px;
+  color:black;
+  //background: $background;
+  background:url("../img/BG.jpg") no-repeat;
+  background-size:cover;
+  text-align:center;
+  font-family: 'Poiret One', cursive;
+}
+
+img {
+  max-width:100%;
+}
+.short {
+  width:200px;
+  position: absolute;;
+  left:0px;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.grid {
+  width:100%;
+  &:after {
+    content: "";
+    display:table;
+    clear:both;
+  }
+}
+
+.grid-pad {
+  padding: 20px 20px 20px 20px;
+}
+
+
+[class*='col-'] {
+  float:left;
+  padding-right:10px;
+  padding-left:10px;
+}
+
+
+.col-1-3 {
+  width:33.33%;
+}
+.col-1-2 {
+  width:48.50%;
+}
+
+@media (max-width:900px) {
+  .col-1-2 {
+    width:100%;
+  }
+}

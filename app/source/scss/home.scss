@@ -1,0 +1,119 @@
+@import '_base/colors';
+
+.home-holder {
+  // background:black;
+  .video-holder {
+      background:black;
+      margin-top:-10px;
+      margin-bottom:-20px;
+      height:380px;
+      h3 {
+        color:$popping-red;
+        position:absolute;
+        z-index:999;
+        margin:0 auto;
+        width:100%;
+        font-size:3em;
+        font-weight:500;
+        top:200px;
+      }
+    img {
+      width:98%;
+      height: 360px;
+      top:-40px;
+      position: relative;
+      -webkit-transition: all 0.3s ease-in-out;
+  -webkit-filter: brightness(100%);
+      &:hover {
+      -webkit-filter: brightness(120%);
+      }
+    }
+  }
+}
+
+  .home-holder>.latest-films {
+    color:white;
+    position: relative;
+    margin:20px 20px;
+    background:#1F1F1F;
+    height:1330px;
+    text-align: left;
+    .films {
+      margin: 0 30px;
+      position: relative;
+      top: 10px;
+      font-size: 30px;
+      font-weight: 500;
+    }
+    .video-block {
+      margin:20px 0 auto 10px;
+      .video {
+        margin-bottom:-60px;
+        .film-name {
+          background:black;
+          position: relative;
+          bottom: 69px;
+          height:40px;
+          width:110px;
+          z-index:999;
+          h4 {
+            margin-left:10px;
+            font-size:1.2em;
+          }
+        }
+        img {
+          width:100%;
+          height:250px;
+          -webkit-transition: all 0.5s ease-in-out;
+          -webkit-filter: brightness(100%);
+          &:hover {
+          -webkit-filter: brightness(120%);
+          }
+        }
+      }
+    }
+  }
+
+.home-holder>.latest-films>.video-block>.video>.video-info {
+      background:#FFF;
+      color:black;
+      position: relative;
+      top:-69px;
+      height:150px;
+      h3 {
+        top:15px;
+        font-size:20px;
+        position: relative;
+        margin:0 20px 25px;
+        }
+        p {
+          font-size:10px;
+          margin:0 20px 30px;
+          }
+          .btn-blue {
+            background:$background;
+            color:white;
+            border-radius: 4px;
+            border: 1px solid transparent;
+            padding: 6px 12px;
+            position: relative;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: center;
+            top:-15px;
+            margin:10px 0 auto 10px;
+            width:50%;
+          }
+}
+
+@media (max-width: 870px) {
+  .home-holder>.video-holder{
+    h3 {
+        top:270px;
+      }
+      img {
+        height:280px;
+      }
+    }
+  }

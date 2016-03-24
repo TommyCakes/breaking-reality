@@ -1,0 +1,41 @@
+@import '_base/colors';
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+.navbar {
+  height:30px;
+  width:90%;
+  margin:0 auto;
+  background:black;
+  position: relative;
+  margin-bottom:-10px;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      padding:15px;
+      a {
+        color:white;
+        -webkit-transition: all 0.3s ease-in-out;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.nav-left {
+  float:left;
+  position: relative;
+  bottom:16px;
+}
+.nav-right {
+  text-align: right;
+  position: relative;
+  bottom:20px;
+  float:right;
+  margin-right:30px;
+}
+.navbar>ul>li>a:hover {
+  color:$popping-red;
+}
