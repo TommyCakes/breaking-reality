@@ -1,27 +1,12 @@
 $(document).ready(function() {
-  var photos = ['http://edge.alluremedia.com.au/m/g/2015/08/blade_runner_4.jpg', 'http://www.cinemablend.com/images/news_img/99337/blade_runner_99337.jpg', 'http://www.diyphotography.net/wordpress/wp-content/uploads/2014/04/bladeRunner_011a.jpg']
-  var count = 0;
-  $('#next').click(function() {
-      count++;
-      $('#carosel').attr("src", photos[count])
+  $('#menu').click(function() {
+    $('.side-nav').animate({
+      right: "+=40%"
+    }, 1000)
   });
-
-  $('#back').click(function() {
-    count--;
-    $('#carosel').attr("src", photos[count])
+  $('#close-menu').click(function() {
+    $('.side-nav').animate({
+      right: "-=40%"
+    }, 500)
   });
-  // setInterval(function() {
-  //   count++;
-  //   $('#carosel')("src", photos[count]);
-  // }, 2000)
-  //
-})
-
-
-$(document).ready(function() {
-
-    setTimeout(function(){
-        $('body').addClass('loaded');
-    }, 3000);
-
 });

@@ -1,6 +1,49 @@
 @import '_base/colors';
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
+
+#menu {
+    opacity:0;
+    float:right;
+    color:white;
+    z-index:9999;
+    position: absolute;;
+    -webkit-transition: all 0.1s ease-in-out;
+    right:60px;
+    top:40px;
+    cursor:pointer;
+}
+.side-nav {
+  background:rgba(0, 0, 0, 0.6);
+  width:30%;
+  height:1000px;
+  z-index:9999;
+  position: fixed;
+  right:-40%;
+  top:0px;
+  #close-menu {
+    color:white;
+    float:right;
+    margin-right:40px;
+    margin-top:10px;
+    font-size:2em;
+    cursor:pointer;
+  }
+  ul {
+    list-style: none;
+    position: relative;
+    right:50px;
+    li {
+      padding:20px;
+      a {
+        color:white;
+        -webkit-transition: all 0.3s ease-in-out;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 .navbar {
   height:30px;
   width:90%;
@@ -38,4 +81,13 @@
 }
 .navbar>ul>li>a:hover {
   color:$popping-red;
+}
+
+@media (max-width:975px) {
+  .navbar {
+    display:none;
+  }
+  #menu {
+    opacity:1;
+  }
 }
