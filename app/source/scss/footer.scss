@@ -2,7 +2,6 @@
 
 .footer {
   font-family: 'Permanent Marker', cursive;
-  //background:black;
   height:200px;
   color:white;
   h5 {
@@ -15,12 +14,13 @@
     li {
       display:inline-block;
       margin:50px;
-      i:hover{
+      a:hover{
         color:$popping-red;
       }
     }
     li>a {
       color: #337ab7;
+      -webkit-transition: all 0.3s ease-in-out;
     }
   }
 }

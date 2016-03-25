@@ -3,127 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../assets/stylesheets/kradient.min.css">
   <link rel="stylesheet" href="../assets/stylesheets/styles.css">
   <title>Testing!</title>
 </head>
 <body>
 
-<div class="container-fluid" id="films">
-    <nav class="nav navbar hidden-xs">
-      <ul class="nav nav-tabs">
-        <div class="brand">
-          <li role="presentation" class="active">
-            <a href="index.html">
-              <img src="http://4.bp.blogspot.com/-V_mx7F5LrTE/Tw8enwGJ96I/AAAAAAAAALU/MvZQzOXK50I/s1600/TS340.gif" alt="">
-            </a></li>
-        </div>
-        <li role="presentation" class="active"><a href="../../index.html">HOME</a></li>
-        <li role="presentation" class="active"><a href="../pages/films.html">FILMS</a></li>
-        <li role="presentation" class="active"><a href="../pages/about-us.html">WHO WE ARE</a></li>
-        <li role="presentation" class="active"><a href="../pages/contact.html">CONNECT WITH US</a></li>
+  <div id="menu">
+    <i class="fa fa-bars fa-lg"></i>
 
-        <li role="presentation" class="active right"><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-        <li role="presentation" class="active right"><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-        <li role="presentation" class="active right"><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
-        <li role="presentation" class="active right"><a href="#"><i class="fa fa-youtube-play fa-2x"></i></a></li>
-        <li role="presentation" class="active right"><a href="#"><i class="fa fa-vimeo-square fa-2x"></i></a></li>
-
-      </ul>
-    </nav>
-
-    <nav class="nav navbar-inverse visible-xs">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <div class="brand">
-        <li role="presentation" class="active">
-          <a href="index.html">
-            <img src="http://4.bp.blogspot.com/-V_mx7F5LrTE/Tw8enwGJ96I/AAAAAAAAALU/MvZQzOXK50I/s1600/TS340.gif" alt="">
-          </a></li>
-      </div>
-    </div>
-  <!-- Navbar collapse -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li role="presentation" class="active"><a href="../../index.html">HOME</a></li>
-        <li role="presentation"><a href="#">FILMS</a></li>
-        <li role="presentation"><a href="#">WHO WE ARE</a></li>
-        <li role="presentation"><a href="#">CONNECT WITH US</a></li>
-      </ul>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-  <div id="video-holder">
-    <h2>OUR FILMS</h2>
-    <a href="#">
-      <!-- <img id="carosel" src="http://edge.alluremedia.com.au/m/g/2015/08/blade_runner_4.jpg" alt=""> -->
-      <img src="../assets/img/eye.jpg" alt="">
-    </a>
-    <h3>SOMETHING ABOUT THE FILMS WE DO</h3>
-    <!-- <button class="btn" id="back"><</button>
-    <button class="btn" id="next">></button> -->
   </div>
+  <nav class="side-nav">
+  <i id="close-menu" class="fa fa-times fa-lg"></i>
+    <ul>
+      <li><a href="../../index.html">HOME</a></li>
+      <li><a href="../pages/films.html">FILMS</a></li>
+      <li><a href="../pages/about-us.html">WHO WE ARE</a></li>
+      <li><a href="../pages/contact.html">CONNECT WITH US</a></li>
+    </ul>
+  </nav>
 
-  <div id="newest-films">
-    <h2 id="films">NEWEST FILMS</h2>
+  <nav class="navbar">
+    <div class="links">
+      <ul class="nav-left">
+        <li><a href="../../index.html">:D</a></li>
+        <li><a href="../../index.html">HOME</a></li>
+        <li><a href="../pages/films.html">FILMS</a></li>
+        <li><a href="../pages/about-us.html">WHO WE ARE</a></li>
+        <li><a href="../pages/contact.html">CONNECT WITH US</a></li>
+      </ul>
+      <ul class='nav-right'>
+        <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube-play fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-vimeo-square fa-2x"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+<div class="grid-pad">
+<div class="films-holder">
+  <section class="video-holder">
+    <a class="main-video" href="#">
+        <img src="https://s-media-cache-ak0.pinimg.com/736x/50/f5/b1/50f5b1857730ffb983277b000b4ea074.jpg" alt="">
+    </a>
+    <h3>OUR FILMS</h3>
+  </section>
 
-  <div class="row">
-     <div class="video-row">
-      <div class="col-xs-6">
-          <div class="video">
+  <section class="newest-films">
+    <h2 class="films">NEWEST FILMS</h2>
+          <div class="video col-2-3">
             <!-- <img src="http://www.diyphotography.net/wordpress/wp-content/uploads/2014/04/bladeRunner_011a.jpg" alt=""> -->
             <img src="http://i.imgur.com/ynAMA.jpg" alt="">
           </div>
-    </div>
-      <div class="col-xs-6">
-        <div class="video-description">
+        <div class="video-description col-1-3">
           <h4>A TIME BEFORE </h4>
           <hr>
           <h3>This will be the title</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisici
             ng elit. Rerum, natus neque et ducimus ullam,
-            perspiciatis qui nobis a placeat </p>
-            <button class="btn btn-blue">WATCH NOW</button>
+            perspiciatis qui nobis a placeat
+            Lorem ipsum dolor sit amet, consectetur adipisici
+              ng elit. Rerum, natus neque et ducimus ullam,
+              perspiciatis qui nobis a placeat </p>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="row">
-     <div class="video-row">
-      <div class="col-xs-6">
-          <div class="video">
+          <div class="video col-2-3">
             <!-- <img src="http://www.diyphotography.net/wordpress/wp-content/uploads/2014/04/bladeRunner_011a.jpg" alt=""> -->
             <img src="../assets/img/wow.jpg" alt="">
           </div>
-    </div>
-      <div class="col-xs-6">
-        <div class="video-description">
+        <div class="video-description col-1-3">
           <h4>A TIME BEFORE </h4>
           <hr>
           <h3>This will be the title</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisici
             ng elit. Rerum, natus neque et ducimus ullam,
-            perspiciatis qui nobis a placeat </p>
-            <button class="btn btn-blue">WATCH NOW</button>
+            perspiciatis qui nobis a placeat
+            Lorem ipsum dolor sit amet, consectetur adipisici
+              ng elit. Rerum, natus neque et ducimus ullam,
+              perspiciatis qui nobis a placeat </p>
         </div>
-      </div>
-    </div>
-  </div>
+  </section>
 
 
-
-</div>
 
 <div class="footer">
   <h5>FOLLOW US FOR MORE!</h5>
@@ -137,7 +99,6 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="../app.js"></script>
 </body>
 </html>

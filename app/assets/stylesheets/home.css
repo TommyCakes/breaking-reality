@@ -86,8 +86,22 @@
     margin: 10px 0 auto 10px;
     width: 50%; }
 
-@media (max-width: 870px) {
-  .home-holder > .video-holder h3 {
-    top: 270px; }
-  .home-holder > .video-holder img {
-    height: 280px; } }
+@media (max-width: 972px) {
+  .home-holder > .video-holder {
+    margin-bottom: -27px; }
+    .home-holder > .video-holder h3 {
+      top: 270px; }
+    .home-holder > .video-holder img {
+      height: 360px;
+      top: 10px; } }
+
+@media (max-width: 972px) {
+  .home-holder > .latest-films h2 {
+    left: 55px; } }
+
+@media (max-width: 899px) {
+  .home-holder > .latest-films > .video-block > .video {
+    width: 80%;
+    margin: 0 auto; }
+    .home-holder > .latest-films > .video-block > .video img {
+      width: 100%; } }

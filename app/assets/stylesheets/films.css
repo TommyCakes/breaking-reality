@@ -1,0 +1,74 @@
+.films-holder .video-holder {
+  background: black;
+  margin-top: -10px;
+  margin-bottom: -20px;
+  height: 380px; }
+  .films-holder .video-holder h3 {
+    color: #F70045;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 3em;
+    font-weight: 500;
+    top: 200px; }
+  .films-holder .video-holder img {
+    width: 98%;
+    height: 360px;
+    top: -40px;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    -webkit-filter: brightness(100%); }
+    .films-holder .video-holder img:hover {
+      -webkit-filter: brightness(120%); }
+
+.films-holder > .newest-films {
+  color: white;
+  position: relative;
+  margin: 20px 20px;
+  background: #1F1F1F;
+  height: 830px;
+  text-align: left; }
+  .films-holder > .newest-films .films {
+    margin: 10px 30px;
+    position: relative;
+    top: 10px;
+    font-size: 30px;
+    font-weight: 500; }
+  .films-holder > .newest-films .video {
+    margin-bottom: 10px; }
+    .films-holder > .newest-films .video img {
+      width: 80%;
+      height: 270px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -webkit-filter: brightness(100%); }
+      .films-holder > .newest-films .video img:hover {
+        -webkit-filter: brightness(120%); }
+
+.films-holder > .newest-films > .video-description {
+  background: #FFF;
+  color: black;
+  position: relative;
+  left: -140px;
+  height: 270px; }
+  .films-holder > .newest-films > .video-description h3 {
+    top: 15px;
+    font-size: 20px;
+    position: relative;
+    margin: 50px 20px 35px; }
+  .films-holder > .newest-films > .video-description p {
+    font-size: 12px;
+    margin: 0 20px 30px; }
+
+@media (max-width: 972px) {
+  .films-holder > .video-holder {
+    margin-bottom: -27px; }
+    .films-holder > .video-holder h3 {
+      top: 270px; }
+    .films-holder > .video-holder img {
+      height: 360px;
+      top: 10px; } }
+
+@media (max-width: 972px) {
+  .films-holder > .latest-films h2 {
+    left: 55px; } }
