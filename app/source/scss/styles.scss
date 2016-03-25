@@ -2,17 +2,17 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Slabo+27px|Raleway:400,100,200,300,500,600|Poiret+One|Permanent+Marker");
 
-@import '_base/_normalize';
+@import '_base/normalize';
 
 @import '_base/colors';
 
-@import 'nav';
+@import '_base/animations';
 
-@import '_base/_mobile-nav';
+@import 'nav';
 
 @import 'home';
 
-@import '_base/_about';
+@import 'about';
 
 @import 'films';
 

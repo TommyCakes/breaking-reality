@@ -1,4 +1,5 @@
 @import '_base/colors';
+@import '_base/animations';
 
 .home-holder {
   // background:black;
@@ -13,14 +14,15 @@
         z-index:999;
         margin:0 auto;
         width:100%;
-        font-size:3em;
+        font-size:2.2em;
         font-weight:500;
         top:200px;
+        animation: fade-in 1s ease-in forwards ;
       }
     img {
       width:98%;
       height: 360px;
-      top:-40px;
+      top:-50px;
       position: relative;
       -webkit-transition: all 0.3s ease-in-out;
       -webkit-filter: brightness(100%);
@@ -35,7 +37,7 @@
     color:white;
     position: relative;
     margin:20px 20px;
-    background:#1F1F1F;
+    background:#0e0e0e;
     height:1330px;
     text-align: left;
     .films {
