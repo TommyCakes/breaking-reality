@@ -1,0 +1,57 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.contact-holder {
+  text-align: center; }
+  .contact-holder .video-holder {
+    background: black;
+    margin-top: -10px;
+    margin-bottom: -16px;
+    height: 380px; }
+    .contact-holder .video-holder h3 {
+      color: #F70045;
+      position: absolute;
+      z-index: 999;
+      margin: 0 auto;
+      width: 100%;
+      font-size: 2.2em;
+      font-weight: 500;
+      top: 200px;
+      animation: fade-in 1s ease-in forwards; }
+    .contact-holder .video-holder img {
+      width: 98%;
+      height: 360px;
+      top: -50px;
+      position: relative;
+      -webkit-transition: all 0.3s ease-in-out;
+      -webkit-filter: brightness(100%); }
+      .contact-holder .video-holder img:hover {
+        -webkit-filter: brightness(120%); }
+
+.contact-holder > .contact-us {
+  color: white;
+  position: relative;
+  margin: 20px 20px;
+  background: #0e0e0e; }
+  .contact-holder > .contact-us a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em; }
+    .contact-holder > .contact-us a:hover {
+      color: #F70045; }
+
+@media (max-width: 972px) {
+  .contact-holder > .video-holder {
+    margin-bottom: -27px; }
+    .contact-holder > .video-holder h3 {
+      top: 270px; }
+    .contact-holder > .video-holder img {
+      height: 360px;
+      top: 10px; } }
+
+@media (max-width: 972px) {
+  .contact-holder > .latest-films h2 {
+    left: 55px; } }

@@ -112,3 +112,14 @@
     margin: 0 auto; }
     .home-holder > .latest-films > .video-block > .video img {
       width: 100%; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .home-holder > .video-holder {
+    height: 200px;
+    width: 100%; }
+    .home-holder > .video-holder h3 {
+      top: 170px;
+      right: 2px;
+      font-size: 1.7em; }
+    .home-holder > .video-holder img {
+      height: 180px; } }
