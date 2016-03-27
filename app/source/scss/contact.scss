@@ -7,7 +7,7 @@
   .video-holder {
       background:black;
       margin-top:-10px;
-      margin-bottom:-16px;
+      margin-bottom:-20px;
       height:380px;
       h3 {
         color:$popping-red;
@@ -37,14 +37,27 @@
 .contact-holder>.contact-us {
   color:white;
   position: relative;
-  margin:20px 20px;
+  //margin:12px 20px;
+  //padding:100px;
   background:#0e0e0e;
-  a {
-    color:white;
-    text-decoration:none;
-    font-size:2em;
-    &:hover {
-      color:$popping-red;
+  height:1180px;
+  p {
+    line-height: 50px;
+      hr {
+      margin:0 auto;
+      position: relative;
+    }
+  }
+  .meet {
+    h2 {
+      border-bottom: 1px solid white;
+    }
+    .team-gallery>ul {
+      list-style: none;
+      li {
+        display:inline-block;
+        padding:50px;
+      }
     }
   }
 }
@@ -62,10 +75,72 @@
     }
   }
 
-@media (max-width: 972px) {
-  .contact-holder>.latest-films {
-    h2 {
-      left:55px;
-    }
-  }
-}
+
+//mobile rules
+// @media only screen
+// and (min-device-width : 320px)
+// and (max-device-width : 568px) {
+//   .about-holder>.video-holder {
+//     height:240px;
+//     width:100%;
+//     h3 {
+//       top:170px;
+//       right:2px;
+//       font-size:1.4em;
+//     }
+//     img {
+//       height:200px;
+//     }
+//   }
+// }
+
+// @import '_base/colors';
+// @import '_base/animations';
+//
+// .contact-holder {
+//   // background:black;
+//   text-align:center;
+//   .video-holder {
+//       background:black;
+//       margin-top:-10px;
+//       margin-bottom:-20px;
+//       height:380px;
+//       h3 {
+//         color:$popping-red;
+//         position:absolute;
+//         z-index:999;
+//         margin:0 auto;
+//         width:100%;
+//         font-size:2.2em;
+//         font-weight:500;
+//         top:200px;
+//         animation: fade-in 1s ease-in forwards ;
+//       }
+//     img {
+//       width:98%;
+//       height: 360px;
+//       top:-50px;
+//       position: relative;
+//       -webkit-transition: all 0.3s ease-in-out;
+//       -webkit-filter: brightness(100%);
+//       &:hover {
+//       -webkit-filter: brightness(120%);
+//       }
+//     }
+//   }
+// }
+//
+// // .contact-holder>.contact-us {
+// //   color:white;
+// //   position: relative;
+// //   //margin:20px 20px;
+// //   background:#0e0e0e;
+// //   a {
+// //     color:white;
+// //     text-decoration:none;
+// //     font-size:2em;
+// //     &:hover {
+// //       color:$popping-red;
+// //     }
+// //   }
+// // }

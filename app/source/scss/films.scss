@@ -91,20 +91,35 @@
     }
   }
 
-@media (max-width: 972px) {
-  .films-holder>.latest-films {
-    h2 {
-      left:55px;
+//mobile rules
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  .films-holder>.video-holder {
+    height:240px;
+    h3 {
+      top:170px;
+      right:2px;
+      font-size:1.7em;
+    }
+    img {
+      height:200px;
     }
   }
+
+  .films-holder>.newest-films{
+    .col-2-3 {
+      width:100%;
+    img {
+      height:150px;
+      width:100%;
+    }
+  }
+  .video-description{
+    width:100%;
+    position: relative;
+    left:0px;
+    overflow:hidden;
+  }
+ }
 }
-//
-//   @media (max-width: 899px) {
-//     .home-holder>.latest-films>.video-block>.video {
-//       width:80%;
-//       margin:0 auto;
-//       img {
-//         width:100%;
-//       }
-//   }
-// }

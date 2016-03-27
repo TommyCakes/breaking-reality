@@ -9,7 +9,7 @@
   .contact-holder .video-holder {
     background: black;
     margin-top: -10px;
-    margin-bottom: -16px;
+    margin-bottom: -20px;
     height: 380px; }
     .contact-holder .video-holder h3 {
       color: #F70045;
@@ -34,14 +34,20 @@
 .contact-holder > .contact-us {
   color: white;
   position: relative;
-  margin: 20px 20px;
-  background: #0e0e0e; }
-  .contact-holder > .contact-us a {
-    color: white;
-    text-decoration: none;
-    font-size: 2em; }
-    .contact-holder > .contact-us a:hover {
-      color: #F70045; }
+  background: #0e0e0e;
+  height: 1180px; }
+  .contact-holder > .contact-us p {
+    line-height: 50px; }
+    .contact-holder > .contact-us p hr {
+      margin: 0 auto;
+      position: relative; }
+  .contact-holder > .contact-us .meet h2 {
+    border-bottom: 1px solid white; }
+  .contact-holder > .contact-us .meet .team-gallery > ul {
+    list-style: none; }
+    .contact-holder > .contact-us .meet .team-gallery > ul li {
+      display: inline-block;
+      padding: 50px; }
 
 @media (max-width: 972px) {
   .contact-holder > .video-holder {
@@ -51,7 +57,3 @@
     .contact-holder > .video-holder img {
       height: 360px;
       top: 10px; } }
-
-@media (max-width: 972px) {
-  .contact-holder > .latest-films h2 {
-    left: 55px; } }

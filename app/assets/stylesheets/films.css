@@ -70,6 +70,22 @@
       height: 360px;
       top: 10px; } }
 
-@media (max-width: 972px) {
-  .films-holder > .latest-films h2 {
-    left: 55px; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .films-holder > .video-holder {
+    height: 240px; }
+    .films-holder > .video-holder h3 {
+      top: 170px;
+      right: 2px;
+      font-size: 1.7em; }
+    .films-holder > .video-holder img {
+      height: 200px; }
+  .films-holder > .newest-films .col-2-3 {
+    width: 100%; }
+    .films-holder > .newest-films .col-2-3 img {
+      height: 150px;
+      width: 100%; }
+  .films-holder > .newest-films .video-description {
+    width: 100%;
+    position: relative;
+    left: 0px;
+    overflow: hidden; } }
