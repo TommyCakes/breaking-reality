@@ -57,8 +57,31 @@
         top:270px;
       }
       img {
-        height:360px;
+        height:260px;
         top:10px;
       }
     }
   }
+
+  //mobile only rules
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 568px) {
+    .contact-holder>.video-holder {
+      height:240px;
+      h3 {
+        top:140px;
+        right:2px;
+        font-size:1.7em;
+      }
+      img {
+        height:200px;
+      }
+    }
+    .contact-holder>.contact-us {
+            background:black;
+            a {
+              font-size:1em;
+            }
+    }
+}
