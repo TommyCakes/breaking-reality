@@ -16,7 +16,7 @@ gulp.task('serve', ['sass'], function() {
 
 // Compile SASS files
 gulp.task('sass', function() {
-    return gulp.src("app/source/scss/*.scss")
+    return gulp.src("app/source/scss/styles.scss")
         .pipe(sass())
         .pipe(gulp.dest("app/assets/stylesheets"))
         // .pipe(browserSync.stream());
