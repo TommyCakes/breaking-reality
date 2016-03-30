@@ -616,7 +616,11 @@ textarea {
         width: 100%;
         margin-bottom: -60px; }
         .home-holder > .latest-films .video-block .video img {
-          height: 190px; } }
+          height: 190px; }
+  .home-holder > .latest-films > .video-block > .video > .video-info {
+    height: 190px; }
+    .home-holder > .latest-films > .video-block > .video > .video-info .btn-blue {
+      padding: 10px 12px; } }
 
 @keyframes fade-in {
   0% {

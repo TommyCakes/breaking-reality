@@ -159,6 +159,7 @@ and (max-device-width : 568px) {
       height:200px;
     }
   }
+
   .home-holder>.latest-films {
     width:100%;
     margin:0 auto;
@@ -176,4 +177,11 @@ and (max-device-width : 568px) {
       }
     }
   }
+
+  .home-holder>.latest-films>.video-block>.video>.video-info {
+    height:190px;
+    .btn-blue {
+      padding: 10px 12px;
+  }
+ }
 }
