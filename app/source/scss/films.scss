@@ -49,7 +49,7 @@
       .video {
         margin-bottom:10px;
         img {
-          width:80%;
+          width:90%;
           height:270px;
           -webkit-transition: all 0.5s ease-in-out;
           -webkit-filter: brightness(100%);
@@ -64,16 +64,17 @@
       background:#FFF;
       color:black;
       position: relative;
-      left:-140px;
+      left:-60px;
       height:270px;
+      width:30%;
       h3 {
         top:15px;
         font-size:20px;
         position: relative;
-        margin:50px 20px 35px;
+        margin:10px 20px 35px;
         }
         p {
-          font-size:12px;
+          font-size:14px;
           margin:0 20px 30px;
           }
     }

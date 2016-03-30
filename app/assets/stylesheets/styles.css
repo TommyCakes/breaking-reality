@@ -556,22 +556,25 @@ textarea {
     position: relative;
     margin: 0 20px 25px; }
   .home-holder > .latest-films > .video-block > .video > .video-info p {
-    font-size: 10px;
-    margin: 0 20px 30px; }
+    font-size: 14px;
+    margin: 0 20px 20px; }
   .home-holder > .latest-films > .video-block > .video > .video-info .btn-blue {
     background: #466475;
     color: white;
     border-radius: 4px;
     border: 1px solid transparent;
-    padding: 6px 12px;
-    position: relative;
+    padding: 12px 12px;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
     text-align: center;
-    top: -15px;
+    position: relative;
+    top: -20px;
     margin: 10px 0 auto 10px;
-    width: 50%; }
+    width: 50%;
+    -webkit-transition: all 0.5s ease-in-out; }
+    .home-holder > .latest-films > .video-block > .video > .video-info .btn-blue:hover {
+      background: #F70045; }
 
 @media (max-width: 972px) {
   .home-holder > .video-holder {
@@ -651,15 +654,17 @@ textarea {
 .about-holder > .about-us {
   color: white;
   position: relative;
-  background: #0e0e0e;
-  height: 1180px; }
+  background: #0e0e0e; }
   .about-holder > .about-us p {
     line-height: 50px; }
     .about-holder > .about-us p hr {
       margin: 0 auto;
       position: relative; }
-  .about-holder > .about-us .meet h2 {
-    border-bottom: 1px solid white; }
+  .about-holder > .about-us .meet .short {
+    margin: 0 auto;
+    position: relative;
+    width: 50%;
+    top: -15px; }
   .about-holder > .about-us .meet .team-gallery {
     position: relative;
     right: 10px; }
@@ -668,6 +673,11 @@ textarea {
       .about-holder > .about-us .meet .team-gallery ul li {
         display: inline-block;
         padding: 20px; }
+        .about-holder > .about-us .meet .team-gallery ul li img {
+          height: 350px; }
+        .about-holder > .about-us .meet .team-gallery ul li .short {
+          width: 100%;
+          top: 10px; }
 
 @media (max-width: 972px) {
   .about-holder > .video-holder {
@@ -730,7 +740,7 @@ textarea {
   .films-holder > .newest-films .video {
     margin-bottom: 10px; }
     .films-holder > .newest-films .video img {
-      width: 80%;
+      width: 90%;
       height: 270px;
       -webkit-transition: all 0.5s ease-in-out;
       -webkit-filter: brightness(100%); }
@@ -741,15 +751,16 @@ textarea {
   background: #FFF;
   color: black;
   position: relative;
-  left: -140px;
-  height: 270px; }
+  left: -60px;
+  height: 270px;
+  width: 30%; }
   .films-holder > .newest-films > .video-description h3 {
     top: 15px;
     font-size: 20px;
     position: relative;
-    margin: 50px 20px 35px; }
+    margin: 10px 20px 35px; }
   .films-holder > .newest-films > .video-description p {
-    font-size: 12px;
+    font-size: 14px;
     margin: 0 20px 30px; }
 
 @media (max-width: 972px) {
@@ -874,6 +885,7 @@ textarea {
   .footer ul {
     list-style: none;
     position: relative;
+    margin: 0 auto;
     top: -20px; }
     .footer ul li {
       display: inline-block;
@@ -882,6 +894,7 @@ textarea {
         color: #F70045; }
     .footer ul li > a {
       color: #337ab7;
+      font-size: 0.8em;
       -webkit-transition: all 0.3s ease-in-out; }
 
 @media (max-width: 450px) {
@@ -894,7 +907,9 @@ textarea {
   .footer ul li {
     margin: 10px;
     position: relative;
-    right: 20px; } }
+    right: 20px; }
+    .footer ul li a {
+      font-size: 1em; } }
 
 html {
   margin-top: 10px;

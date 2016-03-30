@@ -37,10 +37,8 @@
 .about-holder>.about-us {
   color:white;
   position: relative;
-  //margin:12px 20px;
-  //padding:100px;
   background:#0e0e0e;
-  height:1180px;
+  //height:1180px;
   p {
     line-height: 50px;
       hr {
@@ -49,8 +47,11 @@
     }
   }
   .meet {
-    h2 {
-      border-bottom: 1px solid white;
+    .short {
+      margin:0 auto;
+      position: relative;
+      width:50%;
+      top:-15px;
     }
     .team-gallery {
       position: relative;
@@ -60,6 +61,13 @@
       li {
         display:inline-block;
         padding:20px;
+        img {
+          height:350px;
+        }
+        .short {
+          width:100%;
+          top:10px;
+        }
       }
     }
   }

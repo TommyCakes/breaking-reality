@@ -10,6 +10,7 @@
   ul {
     list-style:none;
     position: relative;
+    margin: 0 auto;
     top:-20px;
     li {
       display:inline-block;
@@ -20,6 +21,7 @@
     }
     li>a {
       color: #337ab7;
+      font-size:0.8em;
       -webkit-transition: all 0.3s ease-in-out;
     }
   }
@@ -47,6 +49,9 @@ and (max-device-width : 568px) {
         margin:10px;
         position: relative;
         right:20px;
+        a {
+          font-size:1em;
+        }
       }
     }
   }
