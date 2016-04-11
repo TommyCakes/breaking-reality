@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
 @import url("https://fonts.googleapis.com/css?family=Slabo+27px|Raleway:400,100,200,300,500,600|Poiret+One|Permanent+Marker");
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -428,7 +429,8 @@ textarea {
   position: relative;
   margin-bottom: -10px;
   font-family: 'Open Sans';
-  font-size: 14px; }
+  font-size: 14px;
+  z-index: 9999; }
   .navbar ul {
     list-style: none; }
     .navbar ul li {
@@ -488,7 +490,8 @@ textarea {
   background: black;
   margin-top: -10px;
   margin-bottom: -20px;
-  height: 380px; }
+  height: 380px;
+  position: relative; }
   .home-holder .video-holder h3 {
     color: #F70045;
     position: absolute;
@@ -497,7 +500,7 @@ textarea {
     width: 100%;
     font-size: 2.2em;
     font-weight: 500;
-    top: 200px;
+    top: calc(60% - 2.2em);
     animation: fade-in 1s ease-in forwards; }
   .home-holder .video-holder img {
     width: 98%;
@@ -579,8 +582,6 @@ textarea {
 @media (max-width: 972px) {
   .home-holder > .video-holder {
     margin-bottom: -27px; }
-    .home-holder > .video-holder h3 {
-      top: 270px; }
     .home-holder > .video-holder img {
       height: 360px;
       top: 10px; } }
@@ -599,10 +600,6 @@ textarea {
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
   .home-holder > .video-holder {
     height: 240px; }
-    .home-holder > .video-holder h3 {
-      top: 140px;
-      right: 2px;
-      font-size: 1.7em; }
     .home-holder > .video-holder img {
       height: 200px; }
   .home-holder > .latest-films {
@@ -634,7 +631,8 @@ textarea {
     background: black;
     margin-top: -10px;
     margin-bottom: -20px;
-    height: 380px; }
+    height: 380px;
+    position: relative; }
     .about-holder .video-holder h3 {
       color: #F70045;
       position: absolute;
@@ -643,7 +641,7 @@ textarea {
       width: 100%;
       font-size: 2.2em;
       font-weight: 500;
-      top: 200px;
+      top: calc(60% - 2.2em);
       animation: fade-in 1s ease-in forwards; }
     .about-holder .video-holder img {
       width: 98%;
@@ -686,8 +684,6 @@ textarea {
 @media (max-width: 972px) {
   .about-holder > .video-holder {
     margin-bottom: -27px; }
-    .about-holder > .video-holder h3 {
-      top: 270px; }
     .about-holder > .video-holder img {
       height: 360px;
       top: 10px; } }
@@ -707,7 +703,8 @@ textarea {
   background: black;
   margin-top: -10px;
   margin-bottom: -10px;
-  height: 380px; }
+  height: 380px;
+  position: relative; }
   .films-holder .video-holder h3 {
     color: #F70045;
     position: absolute;
@@ -716,7 +713,7 @@ textarea {
     width: 100%;
     font-size: 2.2em;
     font-weight: 500;
-    top: 200px;
+    top: calc(60% - 2.2em);
     animation: fade-in 1s ease-in forwards; }
   .films-holder .video-holder img {
     width: 98%;
@@ -758,11 +755,6 @@ textarea {
   left: -60px;
   height: 270px;
   width: 30%; }
-  .films-holder > .newest-films > .video-description h3 {
-    top: 15px;
-    font-size: 20px;
-    position: relative;
-    margin: 10px 20px 35px; }
   .films-holder > .newest-films > .video-description p {
     font-size: 14px;
     margin: 0 20px 30px; }
@@ -770,8 +762,6 @@ textarea {
 @media (max-width: 972px) {
   .films-holder > .video-holder {
     margin-bottom: -27px; }
-    .films-holder > .video-holder h3 {
-      top: 270px; }
     .films-holder > .video-holder img {
       height: 360px;
       top: 10px; } }
@@ -825,7 +815,8 @@ textarea {
     background: black;
     margin-top: -10px;
     margin-bottom: -20px;
-    height: 380px; }
+    height: 380px;
+    position: relative; }
     .contact-holder .video-holder h3 {
       color: #F70045;
       position: absolute;
@@ -834,7 +825,7 @@ textarea {
       width: 100%;
       font-size: 2.2em;
       font-weight: 500;
-      top: 200px;
+      top: calc(60% - 2.2em);
       animation: fade-in 1s ease-in forwards; }
     .contact-holder .video-holder img {
       width: 98%;
@@ -860,8 +851,6 @@ textarea {
 @media (max-width: 972px) {
   .contact-holder > .video-holder {
     margin-bottom: -27px; }
-    .contact-holder > .video-holder h3 {
-      top: 270px; }
     .contact-holder > .video-holder img {
       height: 260px;
       top: 10px; } }
@@ -881,11 +870,13 @@ textarea {
       font-size: 1em; } }
 
 .footer {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Open Sans', cursive;
   height: 200px;
   color: white; }
   .footer h5 {
-    font-size: 1.2em; }
+    font-size: 1em;
+    letter-spacing: 5px;
+    font-weight: 300; }
   .footer ul {
     list-style: none;
     position: relative;
@@ -972,3 +963,6 @@ img {
 @media (max-width: 900px) {
   .col-1-2 {
     width: 100%; } }
+
+p {
+  font-family: 'Open Sans'; }

@@ -7,6 +7,7 @@
       margin-top:-10px;
       margin-bottom:-10px;
       height:380px;
+      position: relative;
       h3 {
         color:$popping-red;
         position:absolute;
@@ -15,7 +16,7 @@
         width:100%;
         font-size:2.2em;
         font-weight:500;
-        top:200px;
+        top: calc(60% - 2.2em);
         animation: fade-in 1s ease-in forwards ;
       }
     img {
@@ -67,12 +68,6 @@
       left:-60px;
       height:270px;
       width:30%;
-      h3 {
-        top:15px;
-        font-size:20px;
-        position: relative;
-        margin:10px 20px 35px;
-        }
         p {
           font-size:14px;
           margin:0 20px 30px;
@@ -82,9 +77,6 @@
 @media (max-width: 972px) {
   .films-holder>.video-holder{
     margin-bottom:-27px;
-    h3 {
-        top:270px;
-      }
       img {
         height:360px;
         top:10px;

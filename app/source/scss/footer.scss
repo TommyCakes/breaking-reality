@@ -1,11 +1,14 @@
 @import '_base/colors';
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
 
 .footer {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Open Sans', cursive;
   height:200px;
   color:white;
   h5 {
-    font-size:1.2em;
+    font-size:1em;
+    letter-spacing: 5px;
+    font-weight:300;
   }
   ul {
     list-style:none;
